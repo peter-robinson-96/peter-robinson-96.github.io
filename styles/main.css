@@ -1,0 +1,112 @@
+html {
+    background-color: palegoldenrod;
+    font-family: "open sans";
+}
+
+#header-box {
+    background-color: peru;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.white-space {
+    background-color: palegoldenrod;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#body-box {
+    background-color: peru;
+    padding:15px;
+}
+
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+.col-1{
+    width:8.33%;
+}
+
+.col-2{
+    width:16.66%;
+}
+
+.col-3{
+    width:25%;
+}
+
+.col-4{
+    width:33.33%;
+}
+
+.col-5{
+    width:41.66%;
+}
+
+.col-6{
+    width:50%;
+}
+
+.col-7{
+    width:58.33%;
+}
+
+.col-8{
+    width:66.66%;
+}
+
+.col-9{
+    width:75%;
+}
+
+.col-10{
+    width:83.33%;
+}
+
+.col-11{
+    width:91.66%;
+}
+
+.col-12{
+    width:100%;
+}
+
+
+
+h1 {
+    font-family: "Do Hyeon";
+    font-size: 60pt;
+    text-align:left;
+    margin: 40px;
+    margin-right: 80px;
+    color: palegoldenrod;
+    font-weight: 100;
+    
+
+
+}
+h2 {
+    font-family: "Do Hyeon";
+    text-transform: lowercase;
+    text-align:right;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-top: 150px;
+    margin-bottom:0px;
+    font-size: 300%;
+    color: rgb(71,48,29);
+    align-content: flex-end;
+    font-weight: 200;
+
+}
+
+.scale-image {
+    transform: scale(0.5);
+}
+
