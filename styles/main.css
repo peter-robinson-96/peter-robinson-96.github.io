@@ -14,16 +14,20 @@ hr {
 }
 
 a {
-    padding-top, padding-bottom:0px;
-    padding-left, padding-right:8px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:8px;
+    padding-right:8px;
     text-decoration: none;
     color: rgb(71,48,29);
     
 }
 
 a:hover {
-    padding-top, padding-bottom:0px;
-    padding-left, padding-right:8px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:8px;
+    padding-right:8px;
     background-color: peru;
     color:palegoldenrod;
 }
