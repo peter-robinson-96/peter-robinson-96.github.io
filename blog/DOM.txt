@@ -1,0 +1,30 @@
+The DOM is the Document Object Model, because it's how your browser understands (models) your web Document. It can Often be summarised by a diagram showing many objects in a branching tree structure. 
+For example:
+    Window -> Document -> HTML  -> Head -> title
+                                        -> Charset
+                                        -> link to stylesheet
+                                        -> link to javascript
+                                -> Body -> Header bar   -> main heading
+                                                        -> sub heading
+                                                        -> logo image
+                                                        -> navigation links
+                                                        -> search bar
+                                        -> main div     -> image
+                                                        -> text
+                                                        -> image
+                                                        -> text
+                                        -> footer bar   -> navigation links
+                                                        -> text
+
+It's called an object model because it handles objects like the window object, and the document object. These objects are literally javascript objects; they can contain other nested objects (and usually do), and properties. 
+In our tree diagram above, every branch on the tree is an object.
+The document object is really important for us to know about (probs why it's in the name) because it is interactive, meaning both that you can alter what displays on the webpage by changing the DOM via something like webtools, but also that javascript events are able to be influenced by someone browsing the webpage because they can interact with the document object.
+
+because they're js objects, they can be accessed by js functions. A useful one for finding objects by their html tags (e.g. <h1>) is the .querySelector(), which takes the argument of the string of the name of the desired tag, and returns the first element on the page with that tag.
+If you wanted all of the elements of a given tag, you'd need to use .querySelectorAll(), which will return a nodelist (It may look like an array, but it's not one) of all matching elements in the objects which the method is being applied to. 
+E.g. document.querySelectorAll('p') would return a nodelist with every paragraph element on the page in it's own index (Not totally sure, but I'd assume that they'd be indexed in the order that they appear going through the document object top to bottom, but that's jsut a guess).
+Because .querySelectorAll() doesnt return an array, you can't use array methods on it. You have to manually write a for loop to go through the nodelist and return what you want. Of course, you can create an array and push all of the nodes on the nodelist to it with this manual loop, but we don't for some reason? 
+
+
+
+
