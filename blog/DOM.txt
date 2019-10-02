@@ -25,6 +25,4 @@ If you wanted all of the elements of a given tag, you'd need to use .querySelect
 E.g. document.querySelectorAll('p') would return a nodelist with every paragraph element on the page in it's own index (Not totally sure, but I'd assume that they'd be indexed in the order that they appear going through the document object top to bottom, but that's jsut a guess).
 Because .querySelectorAll() doesnt return an array, you can't use array methods on it. You have to manually write a for loop to go through the nodelist and return what you want. Of course, you can create an array and push all of the nodes on the nodelist to it with this manual loop, but we don't for some reason? 
 
-
-
-
+To get around all of this though, while it won't work to find non-tag selectors, .getElementsByTagName() will just return an array containing each element with the string passed to it as it's tag, e.g running document.getElementsByTagName('p') will return an array with each <p> element in the document in this case, or whatever object you apply the method to in the general case. 
