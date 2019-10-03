@@ -6,7 +6,77 @@
     <link href="../styles/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    The difference between HTML and CSS: EXPLAINED AT LAST  
+    <h2>Is Web development like music?</h2>
+    <p>
+        Those familiar with music theory might understand HTML and CSS better if I were to compare these formats for web development with formats for music. IF HTML usually conveys quite raw, basic info about the text, images etc composing the boxes (we call them 'elements') of a webpage, then in terms of sheet music, html would tell you the name, key signature, time signature, tempo, length, notes and rhythm of a piece, while you would then use css to convey the expression with which the piece should be played. The DOM is the total sheet music which the browser -I mean musician would use to play the music for the website-users --I mean, uh, the audience. And then if I had to talk about javascript the analogy completely breaks. I mean maybe javascript is like the little codas and other symbols telling the musician to repeat parts? Honestly considering sheet music is a technical coded language also, this metaphor works really poorly. 
+        Luckily, if that metaphor didn't help you, i can simply borrow one from one of my instructors, Jo$eph Quested (yes that's how you spell his name). The way he always explains it is to imagine one of those novelty cards, which play some music upon being opened. The html is what the card says; the text it has, any images it sources, the sequence in which it wants the browser to load those things (the order on the page). The CSS is what makes it all graphic-design-is-my-passion: the colour of fonts, backgrounds, whether elements are rounded boxes, where things go, using fancy unusual typefaces, or even if they're slightly animated: all the pretty visual stuff that you'd see on the front of the card _before_ you buy it is handled by the CSS.
+        If the HTML is what's literally going to be written on the card, and the CSS is how the HTML stuff is presented and stylised, then the javascript is the interactive elements: when you open it it plays music, there's a box where you can write your own message inside, the music stops when you close it - maybe its a super high-tech card and it has flaps and popups in it that trigger when you open the card or slide a paper tab around like in one of those tactile kids books. WAIT, THAT WAS THE BETTER ANALOGY THE WHOLE TI-
+    </p>
+    <h2>Control flow and loops</h2>
+    <p>
+        Control flow is what coders think of when they think of the order of operations for their code: what functions are called in what order, and does that cause any problems or errors to be thrown (hopefully not).
+        If it helps, you can imagine its a scorching hot day, and you want a cold drink with ice in it. IF you think about the sequence of events in which you go from not having that drink to having that drink, It probably looks like: 
+    </p>
+    <p>
+        get vessel > get ice > put ice in vessel > get drink > pour drink to fill vessel
+    </p>
+    <p>
+        And if you think about it, those instructions have to happen in that order, or the thing will break down. Obviously you couldnt add ice or liquid without getting them out first, but even if you pour the liquid before adding ice, the instruction says "pour to fill," leaving no room in the cup for the ice!
+        Now you could just not pour to fill, but then the instruction has to change in order to make it so that it can sit in more differnet places in the flow of the code. 
+        This becomes really important when you consider loops. So what if instead of just pouring a drink, you were doing something slightly more complex, with less margin of error like baking?
+        If you have to add dry ingredients to wet for example, you usually want to sift those in slowly while stirring to prevent lumps from forming. To do something like this in javascript, you'd use a while() loop, which would basically say "for the 200g of dry ingredients, sift in 10 grams then mix in for 5 seconds". 
+        This kind of FOR loop is very common in javascript, where you'll initialise a variable (which we've represented with the quantity of our dry ingredients), then tell it to execute some code, and after it finishes the code, change the value of the variable and repeat until a certain condition is met. In our example, we want to decrement (subtract) our dry ingredients weight variable by 10 grams each time our code executes, and to exit the loop when the weight of the dry ingredients is 0g.  
+        This way the dry ingredients won't become an unmanagable mess of floury lumps swimming in melted butter, but instead will always form the desired doughy texture and consistency. 
+        But if you want soft baked goods rather than chewy, you wouldn't want to overmix, because that would stretch and tangle the strands of gluten.
+        To avoid this, you could also add a loop which only executes _after_ the previous loop has been exited. 
+        This loop might say "mix slowly WHILE lumps are visible", which means that the code would mix, check if lumps were visible, and only continue to mix if there were visible lumps, stopping when that is no longer true. 
+
+    </p>
+
+    <h2>Manipulating the DOM</h2>
+    <h3>about 30% as sexy as it sounds</h3>
+    <p>
+        DOM is not a dominant sexual partner, but an acronym abbreviating "Document Object Model". What does this mean? it means that it models the document object, and all objects within the document object. 
+
+    </p>
+    <p>Alright that's all, goodnight everyone!</p>
+    <p>
+        I'm kidding, what a useless explanation. Well, it _is_ accurate; the hardest part about learning what the DOM is is connecting what it's used for with how it works. 
+        So lets start with Document. What does document mean in DOM? well, the document it refers to is actually the html document of a webpage. 
+        It contains everything you see on the webpage, and the DOM uses the html in the document to build a model of what's on it. That's what the Model bit is for in DOM. So we have DoM out of DOM!
+        The DOM reads html documents and produces a model of it so that it can display what it's supposed to on the webpage. How does it build the model? could it be to do with the one other word in DOM?
+        Yes! It's objects. Now, object is a technical term in jaascript. It doesnt just mean "thing", but instead is a type of variable. (A variable if you aren't sure is a thing in which other things are stored when code is run).
+        Exactly how objects work is not crucial to know for understanding the DOM: what's important is that it's how a browser goes about reading an html document and putting it together utlising any javascript and css files with which it's linked. 
+        You can do a lot of nifty things with the DOM, because on any website on virtually any web browser, you can just open it up and have a look. HAve you ever accidentally hit a key on your keyboard top-most row and accidentally opened a weird sidebar on your browser which seems full of incomprenhesible computer stuff? Or have you ever gotten curious about the 'Inspect' option of the right-click drop down menu on a webpage? 
+        In (for the most part) both cases, you would've been interacting with some form of devtool, which would bring up the DOM which the browser is using to display the page which you're currently on. 
+        This basically means that you can, in the browser, mess around with the code which comprises the page, see how it works, see why something you thought should be working isn't working; all without even having to have any kind of permission to change the page. Because you aren't actualyl changing the page itself at all: that's out on a server somewhere. 
+        What you're changing is the DOM which _your_ browser has, and thus the webpage that _your_ browser displays. 
+        
+
+    </p>
+    <p>This is two things.</p>
+    <p>A) Incredibly fun. You can change the text that websites display very easily and make it look like the developers sincerely wanted your text to be there. Like I changed my facebook status prompt text to "Reminder that no human can really be worth a billion dollars and any billionaire has acquired that wealth through exploitation of the labour of others."
+        Or you could go full "They Live", and change all of the engagement buttons on youtube to "CONSUME"
+    </p>
+    <p>B) Incredibly useful. You can mess around with a website to learn how other developers solved a certain problem, you can test and tweak changes while observing the webpage in different conditions when it's actually live on the web; heck, you can even ask for permission to edit the actual source code for the page as it is, and make the changes to the page permanent. </p>
+    <h2>Objects and arrays</h2>
+    <p>
+        If you decide to get into web development and ahve no prior experience with javascript, one of the most frustrating things initially is going to be wrapping your head around the different types of variables, and why they're different (and why that's actually useful at all).
+        For example, an array is a type of variable which stores a number of things, giving each of them an 'index' by which it can be retrieved. So if I had an array of all the different numbers in the phonebook, I could put them all in an array. Hooray?
+        Well, not horray, because I don't actually know anything about each link. Like having all the numbers is fine, but if I get asked for the number of a Person, and my best method of getting it is to call every number in order and ask whether the Person is there, that's proabbly not very efficient. 
+        An object however would be quite good for this task. An object has a lot in common with an array, in that it can store collections of data, each with a unique index by which it can be directly located. However, in addition to this, it stores properties, which can then store their own values. 
+        Those are jargony words, so let's return to the phonebook. If we modeled the phone book as just a list of numbers, we could put that list into an array. So we have every number at a unique place in the index. BUT, both arrays and objects can be placed inside each other and themselves (as in, both objects and arrays generally can go inside objects and arrays - it's impossible to put an object literally inside itself. Just like real life.)
+        So, if we turned every number from being just a string of numbers and instead made them into objects, those objects could house a number of properties, each with their own value stored at them. Like for example, at a random number (let's say 1234567), that number could contain the properties "firstName" and "lastName" which means that with a well written function, I could efficiently take a persons name and return their number (or all the numbers belonging to people with that name at the very least).
+    </p>
+    <h2>*Nodding, staring nervously* "ah, mhm, yes, I know what functions are"</h2>
+    <p>
+        Functions are simple; they're chunks of code that run whne they're called. So if I had a dog who I'd trained to roll over whenever i said "Roll over!", then me giving the command would be like a piece of javascript calling a function, and the dog then rolling over would be the function running. 
+        The most useful aspect of writing code using functions is that you don't have to duplicate what you've written. Imagine if you were a bartender, and your job involved pouring drinks. Imagine if when you were trying to remember how to make an old fashioned, you had to explicitly remind yourself how to pour a drink.
+        Absurd right? You just pour a drink, there are a few exceptions where the pour might look different to create a specific outcome of layered liquids, but if we think of functions as isolated chunks of code which do a specific task, then we can call them in any situation to do that task for us. So say if we had a "pourDrink()" function, it might say something like "open source vessel > hold recipient vessel upright on stable surface > tip vessel until flowrate is x > fill recipient vessel until desired % filled > stop pour"
+        Now we can pour any drink if we know the original vessel, the recipient vessel, the desired % fill, and the flow rate (x). These things you might give to the function each time you call it, so that it pours differently out of a freshly opened chardonnay into a wine glass than it pours from a water jug into a glass tumbler containing ice. 
+        These little bits of information are called "arguments", and when you write the function in the first place, you specify the parameters (what types of arguments the function can use).
+        
+    </p>
   </body>
 
 </html>
