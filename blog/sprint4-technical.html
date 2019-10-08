@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> HTML and the DOM </title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    Tell your non-tech friend a story about a time you:
+
+Got blocked on a simple problem
+Solved a problem in an elegant way.
+In both cases:
+
+What was the problem?
+What problem solving techniques did you use?
+How did you feel throughout the process?
+What did you learn?
+Reflect on how confident you feel using the problem solving techniques and process:
+
+
+Simple problem - TypeError: UNDEFINED IS RUINING MY LIFE
+So basically, if you aren't careful about how you use functions to call variables and other functions (uing the right brackets in the right places, and other small finnicky details), your console may toss back an error claiming that something you're working with can't do what you're asking it to, because it's 'undefined'.
+Undefined is the word javascript uses to describe something that hasn't been made or established yet in the code when it's being called. This means that you'd expect to encounter it if you say, tried to do something using a variable that isn't actually defined in the document anywhere. 
+HOWEVER, the AGONY comes in when you accidentally add a pair of parentheses that your function didn't actually need, which is what I did. 
+This meant my code would stop, despite all the individual bits working independently with no issues, whenever I tried to run it in full. 
+This is because ONLY when I would use the function which referred to the other code, it would start looking for something to go in these parentheses, and find nothing. Then it concluded "Oh, there's supposed ot be something here, but there isn't at all. Can't do anything about that, better tell the silly developer that they need to define whatever's going here."
+I think this story illustrates the limitations of error messages, because error messages are always written presupposing that you are deliberately trying to do something which your code could do. 
+In the same way that code which runs with no errors can not accomplish what you want it to, the error messages themselves won't always know what best to say to point out what you're doing wrong. Because that's not their job. 
+This is why solving the problem involved researching the details of the functions and methods I was using (pre-built code), rather than the text of the error message, which comes up in a massive variety of contexts and can only tell you that something is awry, but not necessarily what. 
+
+Elegant solution - .toLowerCase
+I had to write some code which would take a sentence, remove any occurrence of a given word, and then give me back the sentence without the unwanted words. 
+I knew how to accomplish this fairly straightforwardly, until I noticed that one of the criteria was that it had to work irrespective of capitalisation.
+I panicked; Would I have to check for EVERY possible version of the word with different letters capitalised??
+I couldn't modify the sentence either, because my code would have to be very very clever (moreso than I can manage) to put back any uppercase letters that were supposed to be there if I got rid of all of them in the sentence. 
+BUT then I realised that I only needed to remove the caps for my removal condition, rather than actually modifying the sentence I was working on or returning. 
+This is because I realised that a method I'd researched earlier while trying to solve a different problem could be applied when I check if the word was what I was wanting to remove. 
+It feels like this solution came so easily that there wasn't a particular problem-solving approach involved, but the more likely situation is that some combination of psuedocode (plotting my ideas out in words rather than code), trial and error, and observing ways that this task was similar to previous work I'd done pointed me in the right direction in a way that almost felt like divine inspiration. 
+
+How I feel about problem solving methods - rapid fire;
+Pseudocode - it's really good, especially for more involved and complex problems.
+Trying something - it's really good - my brain really likes reacting to things like error messages rather than trying to just visualise how something is going to go., so even mistakes or poorly thought out guesses can be very useful.
+Rubber ducky method - i have a version of this which isn't really about addressing anyone else, because I habitually talk to myself constantly anyway, but basically when I step away from the computer to use the bathroom or get some food, I explain my problem in my words to myself. And it often works really well.
+Reading error messages - a bit iffy, for obvious reasons if you read my simple problem story above. They can give data, and that data won't be completely useless, but the data they give you is quite obtuse in terms of the proximity to what you need to hear to solve your problem. 
+Console.logging - excellent - I love console logging little bits of my code to see where the problem is. 
+Googling - normally I will try something first, but if I have no ideas, or if I run into some kind of block, I'll do loads of googling cos I think it's great; you hear what other devs say about your problem, you see a bunch of different methods that people have used to solve it, you learn things about the tools you're using that you wouldn't otherwise have learned.
+Asking your peers for help - I don't do this much. Probably because I haven't gotten super stuck on anything I've worked on so far. If I get frustrated after several hours I'll ask someone, but rarely before then. This is perhaps not an ideal amount of asking peers for help, but it just seems like a waste of their time if I ask them something and the mistake I've made is so simple that I would've found it if I just looked away from teh screen for 2 minutes and then looked back. 
+Asking coaches for help - same for coaches, although I feel less like I'm unduly imposing on their time because ostensibly their role is to help me. 
+Improving your process with reflection - this is super super good. At the start of a problem, when I'm blocking out my solution in pseudocode, one of hte first things I ask myself is "what parts of this have I done before?" And more than jsut identifying when I can use something familiar, in the reflections doc for this week you can see I vow to use error messages. Through a single days work, I identified that this is actually of the least consistent problem solving approaches available to me, and is not catch all (which was why I'd assumed it would be valuable to practice).
+
+  </body>
+</html>
